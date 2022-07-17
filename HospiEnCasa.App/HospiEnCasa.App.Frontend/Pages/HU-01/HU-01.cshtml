@@ -1,0 +1,31 @@
+﻿@page
+@model HolaWeb.App.Frontend.Pages.HU_01Model
+@{
+}
+<form>
+    <fieldset>
+        <legend>Registrar paciente</legend>
+        <label>campos obligatorios (*)</label><br>
+        <label for="id_Paciente">ID *</label><br>
+        <input type="text" name="id_Paciente" id="id_Paciente" required><br>
+        <label for="nombre_Paciente">Nombre del paciente *</label><br>
+        <input type="text" name="nombre_Paciente" id="nombre_Paciente" pattern="[a-zA-Z ]{2,254}" required><br>
+        <label for="apellidos_Paciente">Apellidos del paciente *</label><br>
+        <input type="text" name="apellidos_Paciente" id="apellidos_Paciente" pattern="[a-zA-Z ]{2,254}" required><br>
+        <label for="numero_Paciente">Numero teléfonico del paciente *</label><br>
+        <input type="number" name="numero_Paciente" id="numero_Paciente" required><br>
+        <label for="numero_Paciente">Genero</label><br>
+        <input type="text" name="genero_Paciente" id="genero_Paciente" placeholder="Campo opcional" ><br>
+        <label for="direccion_Paciente">Dirección del paciente *</label><br>
+        <input type="text" name="direccion_Paciente" id="direccion_Paciente" required><br>
+        <label for="ciudad_Paciente">Ciudad de residencia *</label><br>
+        <input type="text" name="ciudad_Paciente" id="ciudad_Paciente" pattern="[a-zA-Z ]{2,254}" required><br>
+        <label for="fechaNacimiento_Paciente">Fecha de nacimiento *</label><br>
+        <input type="date" name="fechaNacimiento_Paciente" id="fechaNacimiento_Paciente" required><br>
+        <label for="latitud_Paciente">Latitud</label><br>
+        <input type="text" name="latitud_Paciente" id="latitud_Paciente" placeholder="Campo opcional" ><br>
+        <label for="longitud_Paciente">Longitud</label><br>
+        <input type="text" name="longitud_Paciente" id="longitud_Paciente" placeholder="Campo opcional" ><br><br>
+        <input type="submit" value="Registrar paciente">
+    </fieldset>
+</form>

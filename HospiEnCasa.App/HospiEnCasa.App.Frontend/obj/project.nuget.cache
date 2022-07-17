@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NwT7hIszqX51pFamAC4rk6KKENb4O1MAVBD9roOTvHXpQsRIxmmaoAOpFehPNzr9/PTuISGoXDWpFWhqWCAvFg==",
+  "success": true,
+  "projectFilePath": "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Frontend\\HospiEnCasa.App.Frontend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
