@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dhFnyFsCeE6Jq3OM3AQN/XnhzDnSjdaeYOwrGmOXD8e5S0XB907J6jG5uaKUg3t16TE5ZF559nsiEQ9v+glxqw==",
+  "dgSpecHash": "sfL3dcOws5+B9nlpsDrDqwH+TpVkZQS5mEuspx6vBfbxwgKZd5irvJTgDlvKMpqq1v7CipNNF8GT6Yjsv9Wu1g==",
   "success": true,
   "projectFilePath": "C:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\david\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\david\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\david\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
