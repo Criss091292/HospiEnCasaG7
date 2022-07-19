@@ -34,3 +34,15 @@ C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Deb
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\refint\HospiEnCasa.App.Dominio.dll
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.pdb
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\ref\HospiEnCasa.App.Dominio.dll
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\bin\Debug\net5.0\HospiEnCasa.App.Dominio.deps.json
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\bin\Debug\net5.0\HospiEnCasa.App.Dominio.dll
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\bin\Debug\net5.0\HospiEnCasa.App.Dominio.pdb
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.csproj.AssemblyReference.cache
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.AssemblyInfoInputs.cache
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.AssemblyInfo.cs
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.dll
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\refint\HospiEnCasa.App.Dominio.dll
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.pdb
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\ref\HospiEnCasa.App.Dominio.dll

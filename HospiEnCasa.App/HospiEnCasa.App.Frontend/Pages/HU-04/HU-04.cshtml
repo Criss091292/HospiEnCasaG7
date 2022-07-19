@@ -1,0 +1,28 @@
+﻿@page
+@model HospiEnCasa.App.Frontend.HU_04Model
+@{
+}
+<h1>Listado de Pacientes Hospitalizados en casa </h1>
+<table>
+    @foreach (var paciente in Model.Pacientes)
+    {
+        <tr>
+            <td>
+                @paciente.Id
+            </td>
+            <td>
+                @paciente.Nombre
+            </td>
+            <td>
+                @paciente.Apellidos
+            </td>
+             <td>
+                <a asp-page="./EditarPaciente" asp-route-pacienteId="@paciente.Id">
+                    Editar Paciente
+                </a>
+            </td>
+        </tr>
+
+    }
+</table>
+<a asp-page="..\HU-01\HU-01">Adicionar Paciente</a>
