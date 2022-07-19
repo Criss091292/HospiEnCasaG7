@@ -14,15 +14,22 @@ namespace HospiEnCasa.App.Frontend.Pages
         private readonly IRepositorioPaciente repositorioPaciente;
         [BindProperty]
         public Paciente Paciente {get; set; }
-        public void OnGet()
+        public HU_01Model(IRepositorioPaciente repositorioPaciente)
+        {
+            this.repositorioPaciente=repositorioPaciente;
+        }
+        public IActionResult OnGet()
         {
             Paciente = new Paciente();
+            return Page();
         }
 
         public IActionResult OnPost()
         {
-            
-            repositorioPaciente.AddPaciente(Paciente);
+            if(Paciente != null)
+            {
+                repositorioPaciente.AddPaciente(Paciente);
+            }
             return Page();
         }
     }
