@@ -2,3 +2,41 @@
 @model HospiEnCasa.App.Frontend.HU_05Model
 @{
 }
+<h2>Busqueda del Paciente Por Apellidos</h2>
+
+<form method="post">
+    <label asp-for="Paciente.Apellidos">Escriba los Apellidos tal como registro al paciente</label>
+    <input asp-for="Paciente.Apellidos">
+    <button type="submit" value="Buscar paciente">Buscar paciente</button>
+
+
+</form>
+
+<div>
+    ID: @Model.Paciente.Id
+</div>
+<div>
+    NOMBRE: @Model.Paciente.Nombre
+</div>
+<div>
+    APELLIDOS: @Model.Paciente.Apellidos
+</div>
+<div>
+    TELÉFONO: @Model.Paciente.Telefono
+</div>
+<div>
+    GENERO: @Model.Paciente.Genero
+</div>
+<div>
+    DIRECCIÓN: @Model.Paciente.Direccion
+</div>
+<div>
+    LATITUD: @Model.Paciente.Latitud
+</div>
+<div>
+    LONGITUD: @Model.Paciente.Longitud
+</div>
+<div>
+    CIUDAD: @Model.Paciente.Ciudad
+</div>
+<a asp-page="./ListaPacientes" class = "btn-default">Lista de Pacientes</a>

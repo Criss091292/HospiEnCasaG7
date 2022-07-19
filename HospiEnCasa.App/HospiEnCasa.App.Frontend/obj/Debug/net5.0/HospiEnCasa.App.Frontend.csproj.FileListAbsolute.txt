@@ -287,3 +287,4 @@ C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\De
 C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.csproj.CopyComplete
 C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.genruntimeconfig.cache
 C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\ref\HospiEnCasa.App.Frontend.dll
+C:\Hopitalizacion1\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\HU-05\HU-05.cshtml.g.cs

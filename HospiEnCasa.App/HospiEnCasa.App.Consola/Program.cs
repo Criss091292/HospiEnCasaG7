@@ -11,8 +11,8 @@ namespace HospiEnCasa.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World! Entity Framework");
-            AddPaciente();
-            //BuscarPaciente(3);
+            //AddPaciente();
+            BuscarPaciente("Perez Prieto");
         }
         public static void AddPaciente()
         {
@@ -31,9 +31,9 @@ namespace HospiEnCasa.App.Consola
             _repoPaciente.AddPaciente(paciente);
         }
 
-        private static void BuscarPaciente(int idPaciente)
+        private static void BuscarPaciente(string apellido)
         {
-            var paciente = _repoPaciente.GetPaciente(idPaciente);
+            var paciente = _repoPaciente.GetPaciente(apellido);
             Console.WriteLine(paciente.Nombre + " " + paciente.Apellidos + " " + paciente.Genero);
         }
     }

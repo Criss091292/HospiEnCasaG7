@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KPE7jRy1nQ/GdxnKPizK4c1qGxGfr7gJzkLyKHar2K8KYhxmrXllXsCiXSkHxz+W9NS40UyP5R7oCg0HYC5dLw==",
+  "dgSpecHash": "kMlmzabu6OzB0twb//xpLLG+yu6Dj5S5edGU9EtzX/Ya/9zREJxM+GhiGldOQMj05qIlW9TnyhUZMKIzKwO+WA==",
   "success": true,
   "projectFilePath": "C:\\Hopitalizacion1\\HospiEnCasaG7\\HospiEnCasa.App\\HospiEnCasa.App.Consola\\HospiEnCasa.App.Consola.csproj",
   "expectedPackageFiles": [
@@ -99,11 +99,7 @@
     "C:\\Users\\yotai\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\yotai\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\yotai\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\yotai\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\yotai\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\yotai\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\yotai\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\yotai\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\yotai\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
