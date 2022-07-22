@@ -30,15 +30,16 @@ namespace HospiEnCasa.App.Persistencia
         {
             return _appContext.Pacientes;
         }
-        Paciente IRepositorioPaciente.GetPaciente(string apellido)
+        Paciente IRepositorioPaciente.GetPaciente(string DocumentoIdentidad)
         {
-            return _appContext.Pacientes.FirstOrDefault(p => p.Apellidos == apellido);
+            return _appContext.Pacientes.FirstOrDefault(p => p.DocumentoIdentidad == DocumentoIdentidad);
         }
         Paciente IRepositorioPaciente.UpdatePaciente(Paciente paciente)
         {
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == paciente.Id);
             if (pacienteEncontrado != null)
             {
+                pacienteEncontrado.DocumentoIdentidad = paciente.DocumentoIdentidad;
                 pacienteEncontrado.Nombre = paciente.Nombre;
                 pacienteEncontrado.Apellidos = paciente.Apellidos;
                 pacienteEncontrado.Telefono = paciente.Telefono;

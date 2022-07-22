@@ -6,6 +6,8 @@
     <fieldset>
         <legend>Registrar paciente</legend>
         <label>campos obligatorios (*)</label><br>
+        <label asp-for="Paciente.DocumentoIdentidad">Documento de identidad *</label><br>
+        <input type="number" asp-for="Paciente.DocumentoIdentidad" id="documento_Paciente" required><br>
         <label asp-for="Paciente.Nombre">Nombre del paciente *</label><br>
         <input type="text" asp-for="Paciente.Nombre" id="nombre_Paciente" pattern="[a-zA-Z ]{2,254}" required><br>
         <label asp-for="Paciente.Apellidos">Apellidos del paciente *</label><br>
