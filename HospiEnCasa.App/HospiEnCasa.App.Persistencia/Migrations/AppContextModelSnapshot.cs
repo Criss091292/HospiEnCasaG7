@@ -159,6 +159,18 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                 {
                     b.HasBaseType("HospiEnCasa.App.Dominio.Persona");
 
+                    b.Property<string>("Codigo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Especialidad")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RegistroRethus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasDiscriminator().HasValue("Medico");
                 });
 

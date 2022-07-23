@@ -198,7 +198,6 @@ C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\De
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.TagHelpers.output.cache
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.RazorCoreGenerate.cache
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\HU-01\HU-01.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
@@ -362,3 +361,6 @@ C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.Ap
 C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.pdb
 C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.genruntimeconfig.cache
 C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Registrar_Paciente\HU-01.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Registrar_Paciente\HU-01.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Buscar_Paciente\HU-05.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Listar_Pacientes\HU-04.cshtml.g.cs

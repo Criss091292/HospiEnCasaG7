@@ -26,9 +26,9 @@ namespace HospiEnCasa.App.Frontend
 
     public IActionResult OnPost()
         {
-            if(Paciente.Apellidos != null)
+            if(Paciente.DocumentoIdentidad != null)
             {
-               Paciente = repositorioPaciente.GetPaciente(Paciente.Apellidos);
+               Paciente = repositorioPaciente.GetPaciente(Paciente.DocumentoIdentidad);
                if (Paciente != null){
                     return Page();
 

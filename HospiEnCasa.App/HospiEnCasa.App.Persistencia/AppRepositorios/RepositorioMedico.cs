@@ -36,7 +36,7 @@ namespace HospiEnCasa.App.Persistencia
         }
         Medico IRepositorioMedico.UpdateMedico(Medico medico)
         {
-            var medicoEncontrado = _appContext.Medicos.FirstOrDefault(p => p.Id == medico.Id);
+            var medicoEncontrado = _appContext.Medicos.FirstOrDefault(m => m.Id == medico.Id);
             if (medicoEncontrado != null)
             {
                 medicoEncontrado.DocumentoIdentidad = medico.DocumentoIdentidad;
@@ -44,7 +44,9 @@ namespace HospiEnCasa.App.Persistencia
                 medicoEncontrado.Apellidos = medico.Apellidos;
                 medicoEncontrado.Telefono = medico.Telefono;
                 medicoEncontrado.Genero = medico.Genero;
-                
+                medicoEncontrado.Especialidad = medico.Especialidad;
+                medicoEncontrado.Codigo = medico.Codigo;
+                medicoEncontrado.RegistroRethus = medico.RegistroRethus;
                 
                 _appContext.SaveChanges();
 

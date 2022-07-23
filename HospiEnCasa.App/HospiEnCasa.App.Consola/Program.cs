@@ -8,11 +8,12 @@ namespace HospiEnCasa.App.Consola
     class Program
     {
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente(new Persistencia.AppContext());
+        private static IRepositorioMedico _repoMedico = new RepositorioMedico(new Persistencia.AppContext());
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World! Entity Framework");
-            //AddPaciente();
-            BuscarPaciente("Perez Prieto");
+            //AddMedico();
+            BuscarPaciente("1007240264");
         }
         public static void AddPaciente()
         {
@@ -31,9 +32,25 @@ namespace HospiEnCasa.App.Consola
             _repoPaciente.AddPaciente(paciente);
         }
 
-        private static void BuscarPaciente(string apellido)
+        public static void AddMedico()
         {
-            var paciente = _repoPaciente.GetPaciente(apellido);
+            var medico = new Medico()
+            {
+                DocumentoIdentidad = "1007240264",
+                Nombre = "JuanMedico",
+                Apellidos = "Perez Prieto",
+                Telefono = "300000000",
+                Genero = Genero.masculino,
+                Especialidad = "Ginecologo",
+                Codigo = "001",
+                RegistroRethus = "AA2323"
+            };
+            _repoMedico.AddMedico(medico);
+        }
+
+        private static void BuscarPaciente(string DocumentoIdentidad)
+        {
+            var paciente = _repoPaciente.GetPaciente(DocumentoIdentidad);
             Console.WriteLine(paciente.Nombre + " " + paciente.Apellidos + " " + paciente.Genero);
         }
     }
