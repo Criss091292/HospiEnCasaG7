@@ -26,6 +26,8 @@ namespace HospiEnCasa.App.Frontend
         {
             services.AddRazorPages();
             services.AddSingleton<IRepositorioPaciente>(new RepositorioPaciente(new HospiEnCasa.App.Persistencia.AppContext()));
+            services.AddSingleton<IRepositorioMedico>(new RepositorioMedico(new HospiEnCasa.App.Persistencia.AppContext()));
+            services.AddSingleton<IRepositorioFamiliar>(new RepositorioFamiliar(new HospiEnCasa.App.Persistencia.AppContext()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

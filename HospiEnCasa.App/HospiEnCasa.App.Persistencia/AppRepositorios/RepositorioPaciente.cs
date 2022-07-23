@@ -59,5 +59,18 @@ namespace HospiEnCasa.App.Persistencia
             }
             return pacienteEncontrado;
         }
+
+        Paciente IRepositorioPaciente.UpdateFamiliar(Paciente paciente,FamiliarDesignado familiar)
+        {
+            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == paciente.Id);
+            if (pacienteEncontrado != null)
+            {
+                pacienteEncontrado.FamiliarDesignadoId = familiar.Id;
+
+                _appContext.SaveChanges();
+            }
+
+            return pacienteEncontrado;
+        }
     }
 }

@@ -364,3 +364,6 @@ C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.Ap
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Registrar_Paciente\HU-01.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Buscar_Paciente\HU-05.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Listar_Pacientes\HU-04.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Registrar_Medico\Registrar_Medico.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Asignar_Familiar\Asignar_Familiar.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Tiene_Familiar\Tiene_Familiar.cshtml.g.cs

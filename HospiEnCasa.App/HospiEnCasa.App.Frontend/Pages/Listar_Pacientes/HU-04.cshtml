@@ -17,12 +17,11 @@
                 @paciente.Apellidos
             </td>
              <td>
-                <a asp-page="./EditarPaciente" asp-route-pacienteId="@paciente.Id">
-                    Editar Paciente
+                <a asp-page="../Asignar_Familiar/Asignar_Familiar" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">
+                    Asignar familiar
                 </a>
             </td>
         </tr>
 
     }
 </table>
-<a asp-page="..\Registrar_Paciente\HU-01">Adicionar Paciente</a>

@@ -5,10 +5,14 @@ namespace HospiEnCasa.App.Dominio
 {
     public class Paciente:Persona
     {
+        public int? HistoriaId {get;set;}
         public Historia Historia {get;set;}
         public List<SignoVital> SignosVitales {get;set;}
+        public int? FamiliarDesignadoId {get;set;}
         public FamiliarDesignado FamiliarDesignado {get;set;}
+        public int? EnfermeraId {get;set;}
         public Enfermera Enfermera {get;set;}
+        public int? MedicoId {get;set;}
         public Medico Medico {get;set;}
         public string Direccion {get;set;}
         public float Latitud {get;set;}

@@ -1,0 +1,27 @@
+﻿@page
+@model MyApp.Namespace.Asignar_FamiliarModel
+@{
+}
+<h1>Añadir un familiar al paciente @Model.Paciente.Nombre @Model.Paciente.Apellidos</h1>
+
+<form method="post">
+    <fieldset>
+        <legend>Registrar familiar designado</legend>
+        <label>campos obligatorios (*)</label><br>
+        <label asp-for="FamiliarDesignado.DocumentoIdentidad">Documento de identidad *</label><br>
+        <input type="number" asp-for="FamiliarDesignado.DocumentoIdentidad" required><br>
+        <label asp-for="FamiliarDesignado.Nombre">Nombre del familiar *</label><br>
+        <input type="text" asp-for="FamiliarDesignado.Nombre" pattern="[a-zA-Z ]{2,254}" required><br>
+        <label asp-for="FamiliarDesignado.Apellidos">Apellidos del familiar *</label><br>
+        <input type="text" asp-for="FamiliarDesignado.Apellidos" pattern="[a-zA-Z ]{2,254}" required><br>
+        <label asp-for="FamiliarDesignado.Telefono">Numero teléfonico del familiar *</label><br>
+        <input type="number" asp-for="FamiliarDesignado.Telefono" required><br>
+        <label asp-for="FamiliarDesignado.Genero">Genero</label><br>
+        <input type="text" asp-for="FamiliarDesignado.Genero" placeholder="Campo opcional" ><br>
+        <label asp-for="FamiliarDesignado.Parentesco">Parentesco *</label><br>
+        <input type="text" asp-for="FamiliarDesignado.Parentesco" required><br>
+        <label asp-for="FamiliarDesignado.Correo">Correo *</label><br>
+        <input type="text" asp-for="FamiliarDesignado.Correo" required><br><br>
+        <button type="submit" value="Registrar FamiliarDesignado" asp-route-pacienteDocumento="@Model.Paciente.DocumentoIdentidad">Registrar familiar</button>
+    </fieldset>
+</form>

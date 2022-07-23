@@ -1,0 +1,27 @@
+﻿@page
+@model MyApp.Namespace.Registrar_MedicoModel
+@{
+}
+<form method="post">
+    <fieldset>
+        <legend>Registrar medico</legend>
+        <label>campos obligatorios (*)</label><br>
+        <label asp-for="Medico.DocumentoIdentidad">Documento de identidad *</label><br>
+        <input type="number" asp-for="Medico.DocumentoIdentidad" required><br>
+        <label asp-for="Medico.Nombre">Nombre del medico *</label><br>
+        <input type="text" asp-for="Medico.Nombre" pattern="[a-zA-Z ]{2,254}" required><br>
+        <label asp-for="Medico.Apellidos">Apellidos del medico *</label><br>
+        <input type="text" asp-for="Medico.Apellidos" pattern="[a-zA-Z ]{2,254}" required><br>
+        <label asp-for="Medico.Telefono">Numero teléfonico del medico *</label><br>
+        <input type="number" asp-for="Medico.Telefono" required><br>
+        <label asp-for="Medico.Genero">Genero</label><br>
+        <input type="text" asp-for="Medico.Genero" placeholder="Campo opcional" ><br>
+        <label asp-for="Medico.Especialidad">Especialidad *</label><br>
+        <input type="text" asp-for="Medico.Especialidad" required><br>
+        <label asp-for="Medico.Codigo">Codigo *</label><br>
+        <input type="text" asp-for="Medico.Codigo" required><br>
+        <label asp-for="Medico.RegistroRethus">Registro Rethus *</label><br>
+        <input type="text" asp-for="Medico.RegistroRethus" required><br><br><br>
+        <button type="submit" value="Registrar medico">Registrar medico</button>
+    </fieldset>
+</form>
