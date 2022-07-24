@@ -30,7 +30,11 @@ namespace HospiEnCasa.App.Frontend.Pages
             {
                 repositorioPaciente.AddPaciente(Paciente);
             }
-            return Page();
+            else
+            {
+                return RedirectToPage("../Error");
+            }
+            return RedirectToPage("../Listar_Pacientes/HU-04");
         }
     }
 }

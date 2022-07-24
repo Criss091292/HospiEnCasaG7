@@ -1,0 +1,15 @@
+﻿@page
+@model MyApp.Namespace.Asignar_MedicoModel
+@{
+}
+<h1>Añadir un medico al paciente @Model.Paciente.Nombre @Model.Paciente.Apellidos</h1>
+
+<form method="post">
+    <fieldset>
+        <legend>Ingrese el documento de identidad del medico</legend>
+        <label>campos obligatorios (*)</label><br>
+        <label asp-for="Medico.DocumentoIdentidad">Documento de identidad *</label><br>
+        <input type="number" asp-for="Medico.DocumentoIdentidad" required><br><br><br>
+        <button type="submit" value="Registrar Medico" asp-route-pacienteDocumento="@Model.Paciente.DocumentoIdentidad">Asignar medico</button>
+    </fieldset>
+</form>

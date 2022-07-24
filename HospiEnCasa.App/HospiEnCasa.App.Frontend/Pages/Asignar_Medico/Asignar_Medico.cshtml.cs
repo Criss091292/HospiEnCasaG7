@@ -9,32 +9,32 @@ using HospiEnCasa.App.Dominio;
 
 namespace MyApp.Namespace
 {
-    public class Asignar_FamiliarModel : PageModel
+    public class Asignar_MedicoModel : PageModel
     {
-        private readonly IRepositorioFamiliar repositorioFamiliar;
+        private readonly IRepositorioMedico repositorioMedico;
         private readonly IRepositorioPaciente repositorioPaciente;
         [BindProperty]
-        public FamiliarDesignado FamiliarDesignado {get;set;}
-        public Paciente Paciente {get;set;}
-        public string pacienteDocumento {get;set;}
-        public Asignar_FamiliarModel(IRepositorioFamiliar repositorioFamiliar, IRepositorioPaciente repositorioPaciente)
+        public Medico Medico { get; set; }
+        public Paciente Paciente { get; set; }
+        public string pacienteDocumento { get; set; }
+        public Asignar_MedicoModel(IRepositorioMedico repositorioMedico, IRepositorioPaciente repositorioPaciente)
         {
-            this.repositorioFamiliar = repositorioFamiliar;
+            this.repositorioMedico = repositorioMedico;
             this.repositorioPaciente = repositorioPaciente;
         }
         public IActionResult OnGet(string pacienteDocumento)
         {
             this.pacienteDocumento = pacienteDocumento;
-            FamiliarDesignado = new FamiliarDesignado();
+            Medico = new Medico();
             Paciente = new Paciente();
             Paciente = repositorioPaciente.GetPaciente(pacienteDocumento);
-            if(Paciente == null)
+            if (Paciente == null)
             {
                 return RedirectToPage("../Error");
             }
             else
             {
-                if(Paciente.FamiliarDesignadoId == null)
+                if (Paciente.MedicoId == null)
                 {
                     return Page();
                 }
@@ -49,10 +49,10 @@ namespace MyApp.Namespace
         public IActionResult OnPost(string pacienteDocumento)
         {
             Paciente = repositorioPaciente.GetPaciente(pacienteDocumento);
-            if (FamiliarDesignado != null && Paciente != null)
+            Medico = repositorioMedico.GetMedico(Medico.DocumentoIdentidad);
+            if (Medico != null && Paciente != null)
             {
-                repositorioFamiliar.AddFamiliar(FamiliarDesignado);
-                repositorioPaciente.UpdateFamiliar(Paciente,FamiliarDesignado);
+                repositorioPaciente.UpdateMedico(Paciente, Medico);
             }
             else
             {

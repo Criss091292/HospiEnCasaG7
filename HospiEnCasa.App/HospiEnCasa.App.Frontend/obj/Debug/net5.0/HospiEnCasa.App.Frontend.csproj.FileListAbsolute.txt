@@ -367,3 +367,4 @@ C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\De
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Registrar_Medico\Registrar_Medico.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Asignar_Familiar\Asignar_Familiar.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Tiene_Familiar\Tiene_Familiar.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Asignar_Medico\Asignar_Medico.cshtml.g.cs

@@ -11,5 +11,6 @@ namespace HospiEnCasa.App.Persistencia
         void DeletePaciente(int idPaciente);
         Paciente GetPaciente(string DocumentoIdentidad);
         Paciente UpdateFamiliar(Paciente paciente, FamiliarDesignado familiar);
+        Paciente UpdateMedico(Paciente paciente, Medico medico);
     }
 }

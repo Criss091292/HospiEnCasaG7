@@ -13,6 +13,7 @@ namespace HospiEnCasa.App.Frontend
     {
         private readonly IRepositorioPaciente repositorioPacientes;
         public IEnumerable<Paciente> Pacientes {get;set;}
+        public Paciente Paciente = new Paciente();
         public HU_04Model(IRepositorioPaciente repositorioPacientes)
         {
             this.repositorioPacientes=repositorioPacientes;
@@ -21,5 +22,7 @@ namespace HospiEnCasa.App.Frontend
         {
             Pacientes = repositorioPacientes.GetAllPacientes();
         }
+
+
     }
 }
