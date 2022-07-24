@@ -1,0 +1,22 @@
+﻿@page
+@model MyApp.Namespace.Registrar_SignoVitalModel
+@{
+}
+<h1>Añadir un signo vital al paciente @Model.Paciente.Nombre @Model.Paciente.Apellidos</h1>
+
+<form method="post">
+    <fieldset>
+        <legend>Registrar signo vital</legend>
+        <label>campos obligatorios (*)</label><br>
+        <label asp-for="SignoVital.Signo">Tipo de signo *</label><br>
+        <select name="select" asp-for="SignoVital.Signo" required>
+        <option value="tensionArterial">Tension arterial</option>
+        <option value="frecuenciaCardiaca" selected>Frecuencia cardiaca</option>
+        <option value="saturacionOxigeno">Saturación de oxigeno</option>
+        <option value="temperaturaCorporal">Temperatura corporal</option>
+        </select><br>
+        <label asp-for="SignoVital.Valor">Valor *</label><br>
+        <input type="text" asp-for="SignoVital.Valor" required><br><br><br>
+        <button type="submit" value="Registrar SignoVital" asp-route-pacienteDocumento="@Model.Paciente.DocumentoIdentidad">Registrar signo vital</button>
+    </fieldset>
+</form>

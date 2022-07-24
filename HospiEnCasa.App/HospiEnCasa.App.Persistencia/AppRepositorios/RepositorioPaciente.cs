@@ -84,5 +84,19 @@ namespace HospiEnCasa.App.Persistencia
 
             return pacienteEncontrado;
         }
+        Paciente IRepositorioPaciente.UpdateSignoVital(Paciente paciente,SignoVital signoVital)
+        {
+            List<SignoVital> SignosVitales = new List<SignoVital>();
+            SignosVitales.Add(signoVital);
+            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == paciente.Id);
+            if (pacienteEncontrado != null)
+            {
+                pacienteEncontrado.SignosVitales = SignosVitales;
+
+                _appContext.SaveChanges();
+            }
+
+            return pacienteEncontrado;
+        }
     }
 }
