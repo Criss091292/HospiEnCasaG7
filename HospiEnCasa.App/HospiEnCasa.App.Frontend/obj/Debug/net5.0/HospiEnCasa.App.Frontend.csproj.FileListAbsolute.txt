@@ -369,3 +369,7 @@ C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\De
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Tiene_Familiar\Tiene_Familiar.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Asignar_Medico\Asignar_Medico.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Registrar_SignoVital\Registrar_SignoVital.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Editar_Paciente\Editar_Paciente.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Listar_Familiar\Listar_Familiar.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Editar_Familiar\Editar_Familiar.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Listar_Medico\Listar_Medico.cshtml.g.cs

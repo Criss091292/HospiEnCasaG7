@@ -1,0 +1,35 @@
+﻿@page
+@model HospiEnCasa.App.Frontend.Listar_FamiliarModel
+@{
+}
+<h1>Listado de familiares designados </h1>
+<br>
+<br>
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th>Cedula</th> 
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Opciones</th>
+    </tr>
+    </thead>
+    @foreach (var familiarDesignado in Model.FamiliaresDesignados)
+    {
+        <tr>
+            <td>
+                @familiarDesignado.DocumentoIdentidad
+            </td>
+            <td>
+                @familiarDesignado.Nombre
+            </td>
+            <td>
+                @familiarDesignado.Apellidos
+            </td>
+             <td>
+                <a asp-page="../Editar_Familiar/Editar_Familiar" asp-route-familiarDocumento="@familiarDesignado.DocumentoIdentidad">  Editar</a>
+            </td>
+        </tr>
+
+    }
+</table>

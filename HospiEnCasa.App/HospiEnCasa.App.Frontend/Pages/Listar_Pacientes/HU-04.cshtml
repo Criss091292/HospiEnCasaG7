@@ -30,7 +30,10 @@
                 @paciente.Apellidos
             </td>
              <td>
-                <a asp-page="../Asignar_Familiar/Asignar_Familiar" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Asignar familiar</a> <a asp-page="../Asignar_Medico/Asignar_Medico" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Asignar Medico</a> <a asp-page="../Registrar_SignoVital/Registrar_SignoVital" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Asignar Signo</a>
+                <a asp-page="../Asignar_Familiar/Asignar_Familiar" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Asignar familiar</a>
+                <a asp-page="../Asignar_Medico/Asignar_Medico" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Asignar Medico</a>
+                <a asp-page="../Registrar_SignoVital/Registrar_SignoVital" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Asignar Signo</a>
+                <a asp-page="../Editar_Paciente/Editar_Paciente" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Editar</a>
             </td>
         </tr>
 
