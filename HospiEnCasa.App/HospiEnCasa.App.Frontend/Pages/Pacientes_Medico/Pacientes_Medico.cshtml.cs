@@ -12,15 +12,19 @@ namespace MyApp.Namespace
     public class Pacientes_MedicoModel : PageModel
     {
         private readonly IRepositorioMedico repositorioMedico;
-        public IEnumerable<Medico> Medicos {get;set;}
+        private readonly IRepositorioPaciente repositorioPaciente;
+        public IEnumerable<Paciente> Pacientes {get;set;}
         public Medico Medico = new Medico();
-        public Pacientes_MedicoModel(IRepositorioMedico repositorioMedico)
+        public Paciente Paciente = new Paciente();
+        public Pacientes_MedicoModel(IRepositorioMedico repositorioMedico, IRepositorioPaciente repositorioPaciente)
         {
             this.repositorioMedico = repositorioMedico;
+            this.repositorioPaciente = repositorioPaciente;
         }
         public void OnGet(string medicoDocumento)
         {
             Medico = repositorioMedico.GetMedico(medicoDocumento);
+            Pacientes = repositorioPaciente.GetAllPacientes();
         }
     }
 }

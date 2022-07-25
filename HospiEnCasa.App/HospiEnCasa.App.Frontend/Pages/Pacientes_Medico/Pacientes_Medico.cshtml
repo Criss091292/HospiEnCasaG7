@@ -13,17 +13,17 @@
         <th>Apellidos</th>
     </tr>
     </thead>
-    @foreach (var medico in Model.Medicos)
+    @foreach (var paciente in Model.Pacientes) if (paciente.MedicoId == Model.Medico.Id)
     {
         <tr>
             <td>
-                @medico.DocumentoIdentidad
+                @paciente.DocumentoIdentidad
             </td>
             <td>
-                @medico.Nombre
+                @paciente.Nombre
             </td>
             <td>
-                @medico.Apellidos
+                @paciente.Apellidos
             </td>
         </tr>
 
