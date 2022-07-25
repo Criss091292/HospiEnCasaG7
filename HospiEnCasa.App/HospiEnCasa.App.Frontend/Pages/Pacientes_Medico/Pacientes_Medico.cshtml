@@ -8,10 +8,9 @@
 <table class="table">
     <thead class="thead-dark">
     <tr>
-        <th>Cedula</th> 
+        <th>Cedula</th>
         <th>Nombre</th>
         <th>Apellidos</th>
-        <th>Opciones</th>
     </tr>
     </thead>
     @foreach (var medico in Model.Medicos)
@@ -25,9 +24,6 @@
             </td>
             <td>
                 @medico.Apellidos
-            </td>
-             <td>
-                <a asp-page="../Pacientes_Medico/Pacientes_Medico" asp-route-medicoId="@medico.Id">  Listado de pacientes</a>
             </td>
         </tr>
 
