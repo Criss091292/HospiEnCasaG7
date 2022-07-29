@@ -29,6 +29,7 @@ namespace HospiEnCasa.App.Frontend
             services.AddSingleton<IRepositorioMedico>(new RepositorioMedico(new HospiEnCasa.App.Persistencia.AppContext()));
             services.AddSingleton<IRepositorioFamiliar>(new RepositorioFamiliar(new HospiEnCasa.App.Persistencia.AppContext()));
             services.AddSingleton<IRepositorioSignoVital>(new RepositorioSignoVital(new HospiEnCasa.App.Persistencia.AppContext()));
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +50,8 @@ namespace HospiEnCasa.App.Frontend
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

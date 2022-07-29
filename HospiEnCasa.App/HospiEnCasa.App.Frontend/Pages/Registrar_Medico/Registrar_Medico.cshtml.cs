@@ -31,7 +31,7 @@ namespace MyApp.Namespace
             {
                 repositorioMedico.AddMedico(Medico);
             }
-            return Page();
+            return RedirectToPage("../Listar_Medico/Listar_Medico");
         }
     }
 }

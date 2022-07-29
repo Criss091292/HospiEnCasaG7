@@ -4,5 +4,6 @@ namespace HospiEnCasa.App.Dominio
     {
         masculino,
         femenino,
+        noResponde,
     }
 }

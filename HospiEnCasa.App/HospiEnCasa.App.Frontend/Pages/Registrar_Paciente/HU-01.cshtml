@@ -14,8 +14,12 @@
         <input type="text" asp-for="Paciente.Apellidos" id="apellidos_Paciente" pattern="[a-zA-Z ]{2,254}" required><br>
         <label asp-for="Paciente.Telefono">Numero teléfonico del paciente *</label><br>
         <input type="number" asp-for="Paciente.Telefono" id="numero_Paciente" required><br>
-        <label asp-for="Paciente.Genero">Genero</label><br>
-        <input type="text" asp-for="Paciente.Genero" id="genero_Paciente" placeholder="Campo opcional" ><br>
+        <label asp-for="Paciente.Genero"> Genero </label><br>
+        <select asp-for="Paciente.Genero">
+            <option value="noResponde" selected> Campo opcional</option>
+            <option value="masculino"> Masculino</option>
+            <option value="femenino"> Femenino</option>
+        </select><br><br>
         <label asp-for="Paciente.Direccion">Dirección del paciente *</label><br>
         <input type="text" asp-for="Paciente.Direccion" id="direccion_Paciente" required><br>
         <label asp-for="Paciente.Ciudad">Ciudad de residencia *</label><br>
@@ -26,6 +30,6 @@
         <input type="text" asp-for="Paciente.Latitud" id="latitud_Paciente" placeholder="Campo opcional" ><br>
         <label asp-for="Paciente.Longitud">Longitud</label><br>
         <input type="text" asp-for="Paciente.Longitud" id="longitud_Paciente" placeholder="Campo opcional" ><br><br>
-        <button type="submit" value="Registrar paciente">Registrar paciente</button>
+        <button type="submit" value="Registrar paciente" class="btn btn-primary">Registrar paciente</button>
     </fieldset>
 </form>
