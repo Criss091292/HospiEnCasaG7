@@ -16,24 +16,27 @@ using Microsoft.Extensions.Logging;
 
 namespace HospiEnCasa.App.Frontend.Areas.Identity.Pages.Account
 {
-    [AllowAnonymous]
+    [Authorize(Roles = "Admin")]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         [BindProperty]
@@ -60,6 +63,10 @@ namespace HospiEnCasa.App.Frontend.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            [Required]
+            [Display(Name = "Seleccione un rol")]
+            public string rol { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -79,7 +86,12 @@ namespace HospiEnCasa.App.Frontend.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-
+                    if((await _roleManager.RoleExistsAsync(Input.rol)) != true)
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(Input.rol)); 
+                        _logger.LogInformation("rol creado");
+                    }
+                    await _userManager.AddToRoleAsync(user,Input.rol);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(

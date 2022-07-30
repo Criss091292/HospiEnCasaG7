@@ -1,0 +1,41 @@
+﻿@page
+@model HospiEnCasa.App.Frontend.HU_04Model
+@{
+}
+<h1>Listado de Pacientes Hospitalizados en casa </h1>
+<br>
+<button value="Añadir paciente nuevo" onclick="location.href = '../Admin/Registrar_Paciente/HU-01';" class="btn btn-primary">Añadir paciente nuevo</button>
+<button value="buscar Paciente" onclick="location.href = '../Admin/Buscar_Paciente/HU-05';" class="btn btn-secondary">Buscar Paciente</button>
+<br>
+<br>
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th>Cedula</th> 
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Opciones</th>
+    </tr>
+    </thead>
+    @foreach (var paciente in Model.Pacientes)
+    {
+        <tr>
+            <td>
+                @paciente.DocumentoIdentidad
+            </td>
+            <td>
+                @paciente.Nombre
+            </td>
+            <td>
+                @paciente.Apellidos
+            </td>
+             <td>
+                <a asp-page="../Admin/Asignar_Familiar/Asignar_Familiar" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Asignar familiar</a>
+                <a asp-page="../Admin/Asignar_Medico/Asignar_Medico" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Asignar Medico</a>
+                <a asp-page="../Admin/Registrar_SignoVital/Registrar_SignoVital" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Asignar Signo</a>
+                <a asp-page="../Admin/Editar_Paciente/Editar_Paciente" asp-route-pacienteDocumento="@paciente.DocumentoIdentidad">  Editar</a>
+            </td>
+        </tr>
+
+    }
+</table>

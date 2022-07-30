@@ -8,7 +8,12 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using HospiEnCasa.App.Persistencia;
+
 
 namespace HospiEnCasa.App.Frontend
 {
@@ -24,7 +29,10 @@ namespace HospiEnCasa.App.Frontend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            services.AddRazorPages(options =>
+            {
+                options.Conventions.AuthorizeFolder("/Admin", "Admin");
+            });
             services.AddSingleton<IRepositorioPaciente>(new RepositorioPaciente(new HospiEnCasa.App.Persistencia.AppContext()));
             services.AddSingleton<IRepositorioMedico>(new RepositorioMedico(new HospiEnCasa.App.Persistencia.AppContext()));
             services.AddSingleton<IRepositorioFamiliar>(new RepositorioFamiliar(new HospiEnCasa.App.Persistencia.AppContext()));
