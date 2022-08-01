@@ -43,7 +43,6 @@ namespace HospiEnCasa.App.Frontend.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            [EmailAddress]
             public string Email { get; set; }
 
             [Required]
@@ -85,7 +84,19 @@ namespace HospiEnCasa.App.Frontend.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    var finduser = await _userManager.FindByNameAsync(Input.Email);
+                    if(await _userManager.IsInRoleAsync(finduser, "admin"))
+                    {
+                        return Redirect("/Admin/Index_Admin");
+                    }
+                    else if(await _userManager.IsInRoleAsync(finduser, "paciente"))
+                    {
+                        return Redirect("/Paciente/Index_Paciente");
+                    }
+                    else
+                    {
+                        return RedirectToPage("/Error");
+                    }
                 }
                 if (result.RequiresTwoFactor)
                 {

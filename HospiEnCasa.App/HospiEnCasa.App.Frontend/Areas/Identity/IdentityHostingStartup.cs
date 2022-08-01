@@ -19,12 +19,12 @@ namespace HospiEnCasa.App.Frontend.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("IdentityDataContextConnection")));
 
-                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddRoles<IdentityRole>()
+                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false).AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<IdentityDataContext>();
 
                 services.AddAuthorization(options => 
                 {
-                    options.AddPolicy("Admin", pol => pol.RequireRole("Admin"));
+                    options.AddPolicy("admin", pol => pol.RequireRole("admin"));
                 });
             });
         }

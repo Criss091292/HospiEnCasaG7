@@ -578,3 +578,11 @@ C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.Ap
 C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Admin\Registrar_Paciente\HU-01.cshtml.g.cs
 C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Admin\Registrar_SignoVital\Registrar_SignoVital.cshtml.g.cs
 C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Errores\Tiene_Familiar\Tiene_Familiar.cshtml.g.cs
+C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Admin\_ViewStart.cshtml.g.cs
+C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Admin\Index_Admin.cshtml.g.cs
+C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Paciente\Index_Paciente.cshtml.g.cs
+C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Paciente\Registrar_SignoVital\Registrar_SignoVitalP.cshtml.g.cs
+C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Paciente\_ViewStart.cshtml.g.cs
+C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Shared\_LayoutPaciente.cshtml.g.cs
+C:\Users\betancurtperez.6-t2\Documents\Programacion\HospiEnCasaG7\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Paciente\Editar_Paciente\Editar_Paciente.cshtml.g.cs

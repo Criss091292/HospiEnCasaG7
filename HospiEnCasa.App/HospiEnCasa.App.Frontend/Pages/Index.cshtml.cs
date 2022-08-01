@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace HospiEnCasa.App.Frontend.Pages
 {
-    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
@@ -19,9 +18,9 @@ namespace HospiEnCasa.App.Frontend.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
-
+            return Redirect("/Admin/Index_Admin");
         }
     }
 }

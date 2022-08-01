@@ -31,7 +31,7 @@ namespace HospiEnCasa.App.Frontend
         {
             services.AddRazorPages(options =>
             {
-                options.Conventions.AuthorizeFolder("/Admin", "Admin");
+                options.Conventions.AuthorizeFolder("/Admin", "admin");
             });
             services.AddSingleton<IRepositorioPaciente>(new RepositorioPaciente(new HospiEnCasa.App.Persistencia.AppContext()));
             services.AddSingleton<IRepositorioMedico>(new RepositorioMedico(new HospiEnCasa.App.Persistencia.AppContext()));

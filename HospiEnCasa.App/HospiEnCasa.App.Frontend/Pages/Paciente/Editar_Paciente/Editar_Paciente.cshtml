@@ -1,0 +1,24 @@
+﻿@page
+@model MyApp.Namespace.PacienteI.Editar_PacienteModel
+@{
+}
+
+<h1>Actualizar información de contacto</h1>
+
+<form method="post">
+    <fieldset>
+        <legend>Actualizar información del paciente</legend>
+        <label>campos obligatorios (*)</label><br>
+        <label asp-for="Paciente.Telefono">Numero teléfonico del paciente *</label><br>
+        <input type="number" asp-for="Paciente.Telefono" id="numero_Paciente" required><br>
+        <label asp-for="Paciente.Direccion">Dirección del paciente *</label><br>
+        <input type="text" asp-for="Paciente.Direccion" id="direccion_Paciente" required><br>
+        <label asp-for="Paciente.Ciudad">Ciudad de residencia *</label><br>
+        <input type="text" asp-for="Paciente.Ciudad" id="ciudad_Paciente" pattern="[a-zA-Z ]{2,254}" required><br>
+        <label asp-for="Paciente.Latitud">Latitud</label><br>
+        <input type="text" asp-for="Paciente.Latitud" id="latitud_Paciente" placeholder="Campo opcional" ><br>
+        <label asp-for="Paciente.Longitud">Longitud</label><br>
+        <input type="text" asp-for="Paciente.Longitud" id="longitud_Paciente" placeholder="Campo opcional" ><br><br>
+        <button type="submit" value="Actualizar datos">Actualizar datos</button>
+    </fieldset>
+</form>
